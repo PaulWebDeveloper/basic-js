@@ -6,5 +6,4 @@ module.exports = function countCats(backyard) {
   }));
 
   return number;
-  throw 'Not implemented';
 };

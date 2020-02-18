@@ -11,5 +11,4 @@ module.exports = function getSeason(date) {
   if (value === 4) value = 0;
   
   return timeOfYear[value];
-  throw 'Not implemented';
 };

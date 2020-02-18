@@ -4,5 +4,4 @@ module.exports = function calculateHanoi(disksNumber, turnsSpeed) {
   obj.seconds = obj.turns / (turnsSpeed / 3600);
   
   return obj;
-  throw 'Not implemented';
 };

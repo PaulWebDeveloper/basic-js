@@ -12,7 +12,6 @@ module.exports = function dateSample(sampleActivity) {
   else number = false;
 
   return number;
-  throw 'Not implemented';
 };
 
 const transformation = str => {

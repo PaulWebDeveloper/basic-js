@@ -5,7 +5,6 @@ module.exports = function createDreamTeam(members) {
   members = searchDreamTeamName(members);
 
   return members;
-  throw 'Not implemented';
 };
 
 const clearUnnecessary = arr => arr.map(item => 

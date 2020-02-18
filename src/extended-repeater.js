@@ -12,7 +12,6 @@ module.exports = function repeater(str, options) {
   str = repeat(str + addString,repeatTimes,separator);
 
   return str;
-  throw 'Not implemented';
 };
   
 const repeat = (str, repeatTimes, separator) => {
