@@ -9,14 +9,14 @@ class VigenereCipheringMachine {
     if (!message || !key) throw Error('no args');
 
     message = vigenereCipher(message, key, 1);
-    return this.type ? message : message.split('').reverse().join('');
+    return this.type ? message : reversedMessage(message);
   }
 
   decrypt(message,key) {
     if (!message || !key) throw Error('no args');
 
     message = vigenereCipher(message, key, -1);
-    return this.type ? message : message.split('').reverse().join('');
+    return this.type ? message : reversedMessage(message);
   }
 }
 
@@ -40,5 +40,7 @@ const vigenereCipher = (message, key, n) => {
   }
   return codingDecoding(message);
 };
+
+const reversedMessage = message => message.split('').reverse().join('');
 
 module.exports = VigenereCipheringMachine;
